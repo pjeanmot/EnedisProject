@@ -1,0 +1,55 @@
+<ion-view view-title="Envoyer la sélection à l'agent">
+  <ion-content>
+
+    <style type="text/css">
+      #notif_container {
+        width: 40%;
+        margin-left: 30%;
+      }
+
+      #notif_container textarea {
+        background-color: lightgrey;
+        border-bottom-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        width: 100%;
+        height: 10em;
+        margin-bottom: 1em;
+      }
+
+      .notif_text {
+        margin-top: 3em;
+      }
+
+      .notif_link {
+        display: inline-block;
+        font-size: 1em;
+        margin-top: 3em;
+        margin-left: 20%;
+        width: 20%;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: grey;
+        color: white;
+        padding: 0.5em;
+      }
+
+    </style>
+
+
+    <div id="notif_container">
+      <p class="notif_text">Une notification de l'invitation va être envoyée par mail à l'agent. Vous pouvez ajouter un commentaire personnalisé.</p>
+
+      <p class="notif_text">Commentaire : </p>
+
+      <textarea autofocus="true">
+
+    </textarea>
+    </div>
+
+    <footer>
+      <a class="notif_link" href="#/app/addWorkProfil" type="submit">Valider et attribuer d'autres travaux</a>
+      <a class="notif_link" href="#/accueil" type="submit">Valider et retour à l'accueil</a>
+    </footer>
+  </ion-content>
+</ion-view>

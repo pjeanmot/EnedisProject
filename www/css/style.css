@@ -1,0 +1,108 @@
+/* Empty. Add your own CSS if you like */
+
+#home_container h1,
+#validation_container h1,
+#new_container h1{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+  text-align: left;
+  font-size: 2em;
+  border-bottom: 1px solid grey;
+}
+
+#home_container .home_link,
+#choice_container .choice_link{
+  width: 40%;
+  font-size: 1em;
+  margin-left: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+#choice_container {
+  margin-top: 17%;
+}
+
+#home_container h1 {
+  margin-bottom: 17%;
+}
+
+#home_container p,
+#choice_container p{
+  background-color: grey;
+  width: 40%;
+  margin-left: 30%;
+  padding: 2em;
+}
+
+.new_btn p{
+  background-color: grey;
+  width: 20%;
+  margin-left: 20%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+#validation_container .validation_message{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 0.2%;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.validation_btn p{
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 12%;
+  width: 16%;
+  margin-top: 2%;
+  background-color: grey;
+  text-decoration:none;
+  color: white;
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+.addProfileNewForm_part{
+  display: inline-block;
+  width: 40%;
+}
+
+.addProfileNewForm_part input,
+.addProfileNewForm_part label{
+  display: inline-block;
+  padding: 0;
+  width: 23%;
+}
+.addProfileNewForm_part label{
+  margin-left: 20%;
+}
+
+.addProfileNewForm_part input{
+  border-bottom: 1px solid grey;
+  width: 43%;
+}
+
+#addProfileNewForm_part1{
+  margin-left: 10%;
+}
+
+.addProfileNewForm_part span{
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+#new_star{
+  margin-left: 10%;
+}

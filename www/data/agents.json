@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "prenom": "Jean",
+    "nom": "Dupont",
+    "naissance": "24/07/88",
+    "nni": "ADN0003",
+    "statut": "agent",
+    "college": "Execution",
+    "ancien": "2",
+    "etude": "4"
+  },
+  {
+    "id": 2,
+    "prenom": "Bernard",
+    "nom": "Lamy",
+    "naissance": "12/03/90",
+    "nni": "A0N0023",
+    "statut": "alternant",
+    "college": "",
+    "ancien": "0.5",
+    "etude": "3"
+  },
+  {
+    "id": 3,
+    "prenom": "Lea",
+    "nom": "Ranton",
+    "naissance": "09/10/86",
+    "nni": "ATT0033",
+    "statut": "agent",
+    "college": "Maitrise",
+    "ancien": "5",
+    "etude": "4"
+  },
+  {
+    "id": 4,
+    "prenom": "Romane",
+    "nom": "Premier",
+    "naissance": "12/11/91",
+    "nni": "AET0123",
+    "statut": "agent",
+    "college": "Execution",
+    "ancien": "3",
+    "etude": "3"
+  },
+  {
+    "id": 5,
+    "prenom": "Thomas",
+    "nom": "Pailloux",
+    "naissance": "07/07/92",
+    "nni": "ADT0245",
+    "statut": "agent",
+    "college": "Execution",
+    "ancien": "1",
+    "etude": "3"
+  },
+  {
+    "id": 6,
+    "prenom": "Maxime",
+    "nom": "Faria",
+    "naissance": "10/11/85",
+    "nni": "BPD0765",
+    "statut": "agent",
+    "college": "Maitrise",
+    "ancien": "3",
+    "etude": "4"
+  },
+  {
+    "id": 7,
+    "prenom": "Clement",
+    "nom": "Grenier",
+    "naissance": "06/10/79",
+    "nni": "BQQ0335",
+    "statut": "agent",
+    "college": "Execution",
+    "ancien": "5",
+    "etude": "3"
+  },
+  {
+    "id": 8,
+    "prenom": "Corrine",
+    "nom": "Maguier",
+    "naissance": "29/08/83",
+    "nni": "BBD0289",
+    "statut": "agent",
+    "college": "Execution",
+    "ancien": "4",
+    "etude": "4"
+  }
+]

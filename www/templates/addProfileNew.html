@@ -1,0 +1,67 @@
+<ion-view view-title="Créer un nouveau profil">
+  <ion-content id="new_container">
+
+    <h1>INFORMATIONS AGENT</h1>
+
+    <style>
+      .addProfileNewForm {
+        transition:all linear 0.5s;
+        background: transparent;
+      }
+      form span{
+        color: red;
+      }
+    </style>
+
+    <form name="addProfileNewForm" ng-controller="addProfileNewFormCtrl">
+      <div class="addProfileNewForm_part" id="addProfileNewForm_part1">
+        <label for="prenom">* Préom:</label>
+        <input type="text" name="prenom" ng-model="prenom" placeholder="Jean" required/><br/>
+        <span class="error" ng-show="addProfileNewForm.prenom.$error.required">Un prénom est requis!</span>
+
+        <label for="nom">* Nom:</label>
+        <input type="text" name="nom" ng-model="nom" required/><br/>
+        <span class="error" ng-show="addProfileNewForm.nom.$error.required">Un nom est requis!</span>
+
+        <label for="birth">Date de naissance:</label>
+        <input type="date" name="birth" ng-model="birth" placeholder="00-00-1900" /><br/>
+
+        <label for="genre">* Genre:</label>
+        <input type="text" name="genre" ng-model="genre" placeholder="Masculin" required/><br/>
+        <span class="error" ng-show="addProfileNewForm.genre.$error.required">Le genre est requis!</span>
+
+        <label for="college">* Collège:</label>
+        <input type="text" name="college" ng-model="college" placeholder="College" required/><br/>
+        <span class="error" ng-show="addProfileNewForm.college.$error.required">Le collège est requis!</span>
+
+        <label for="nni">* NNI:</label>
+        <input type="text" name="nni" ng-model="nni" placeholder="AD00" required/><br/>
+        <span class="error" ng-show="addProfileNewForm.nni.$error.required">Un NNI est requis!</span>
+      </div>
+      <div class="addProfileNewForm_part" id="addProfileNewForm_part2">
+        <label for="statut">* Statut:</label>
+        <input type="text" name="statut" ng-model="statut" placeholder="Statut" required/><br/>
+        <span class="error" ng-show="addProfileNewForm.statut.$error.required">Un statut est requis!</span>
+
+        <label for="ancien">Ancienneté poste:</label>
+        <input type="text" name="ancien" ng-model="ancien" placeholder="Ancienneté" /><br/>
+
+        <label for="ancienieg">Ancienneté IEG:</label>
+        <input type="text" name="ancienieg" ng-model="ancienieg" placeholder="Ancienneté IEG" /><br/>
+
+        <label for="niveau">Niveau d'étude:</label>
+        <input type="text" name="niveau" ng-model="niveau" placeholder="Etudes" /><br/>
+
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" ng-model="email" placeholder="ex@mail.com" />
+      </div>
+
+      <p id="new_star">* indique un champ obligatoire</p>
+      <button ng-click="reset()">Tout effacer</button>
+      <button ng-click="go('/app/profile/addProfileNewValidation')">Suivant</button>
+
+    </form>
+
+  </ion-content>
+</ion-view>
+

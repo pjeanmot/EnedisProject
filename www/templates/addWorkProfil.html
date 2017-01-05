@@ -1,0 +1,79 @@
+<ion-view view-title="Séléctionner Profils Agent">
+  <ion-content id="new_container">
+
+    <h1>Séléctionner les agents</h1>
+    <style>
+      .gauche{
+        display: inline-block;
+        padding: 0;
+        width: 40%;
+        margin-top:5%;
+        margin-left: 6%;
+        height: 60%;
+      }
+
+      .droite {
+        display: inline-block;
+        padding: 0;
+        width: 40%;
+        margin-top:5%;
+        margin-left: 6%;
+        height: 60%;
+      }
+
+      input {
+        width:100%;
+        margin-bottom: 3%;
+        border-top: solid silver .4px;
+      }
+
+      .btn p {
+        display: inline-block;
+        background-color: grey;
+        margin-left: 20%;
+        width: 20%;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        padding: 0.5em;
+      }
+
+      footer {
+        margin-top: 5%;
+      }
+
+    </style>
+
+
+    <section class="gauche">
+      <header>
+        <input class="form-control" ng-model="search.nom" placeholder="Rechercher un Nom.."/>
+      </header>
+
+      <ion-scroll scrollY="true">
+      <ion-list>
+        <ion-item ng-repeat="profil in profils | filter:search" ng-click="addProfil()">
+          <p class="nom"><strong>{{ profil.nom }} {{profil.prenom}}</strong></p>
+          <p class="nni">{{ profil.nni }}</p>
+        </ion-item>
+      </ion-list>
+      </ion-scroll>
+    </section>
+
+    <section class="droite">
+      <h4>Profils Séléctionnés : </h4>
+      <table>
+        <tr ng-repeat="profil in selectedProfils">
+          <td><strong>{{profil.nom}}</strong></td>
+        </tr>
+      </table>
+    </section>
+
+    <footer>
+    <a class="btn" href="#/app/addWorkModule"><p>Séléctionner un ou plusieurs modules</p></a>
+    <a class="btn" href="#/app/addWorkParcours"><p>Séléctionner un parcours métier</p></a>
+    </footer>
+  </ion-content>
+</ion-view>
