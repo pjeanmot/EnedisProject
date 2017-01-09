@@ -11,50 +11,115 @@
       form span{
         color: red;
       }
+      table{
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+      }
+      td{
+        width: 16.5%;
+      }
+      .cel1,
+      .cel3,
+      .cel5{
+        text-align: right;
+      }
+      .cel2,
+      .cel4,
+      .cel6{
+        text-align: left;
+        padding-left: 2%;
+      }
     </style>
 
     <form name="addProfileNewForm" ng-controller="addProfileNewFormCtrl">
-      <div class="addProfileNewForm_part" id="addProfileNewForm_part1">
-        <label for="prenom">* Préom:</label>
-        <input type="text" name="prenom" ng-model="prenom" placeholder="Jean" required/><br/>
-        <span class="error" ng-show="addProfileNewForm.prenom.$error.required">Un prénom est requis!</span>
 
-        <label for="nom">* Nom:</label>
-        <input type="text" name="nom" ng-model="nom" required/><br/>
-        <span class="error" ng-show="addProfileNewForm.nom.$error.required">Un nom est requis!</span>
 
-        <label for="birth">Date de naissance:</label>
-        <input type="date" name="birth" ng-model="birth" placeholder="00-00-1900" /><br/>
-
-        <label for="genre">* Genre:</label>
-        <input type="text" name="genre" ng-model="genre" placeholder="Masculin" required/><br/>
-        <span class="error" ng-show="addProfileNewForm.genre.$error.required">Le genre est requis!</span>
-
-        <label for="college">* Collège:</label>
-        <input type="text" name="college" ng-model="college" placeholder="College" required/><br/>
-        <span class="error" ng-show="addProfileNewForm.college.$error.required">Le collège est requis!</span>
-
-        <label for="nni">* NNI:</label>
-        <input type="text" name="nni" ng-model="nni" placeholder="AD00" required/><br/>
-        <span class="error" ng-show="addProfileNewForm.nni.$error.required">Un NNI est requis!</span>
-      </div>
-      <div class="addProfileNewForm_part" id="addProfileNewForm_part2">
-        <label for="statut">* Statut:</label>
-        <input type="text" name="statut" ng-model="statut" placeholder="Statut" required/><br/>
-        <span class="error" ng-show="addProfileNewForm.statut.$error.required">Un statut est requis!</span>
-
-        <label for="ancien">Ancienneté poste:</label>
-        <input type="text" name="ancien" ng-model="ancien" placeholder="Ancienneté" /><br/>
-
-        <label for="ancienieg">Ancienneté IEG:</label>
-        <input type="text" name="ancienieg" ng-model="ancienieg" placeholder="Ancienneté IEG" /><br/>
-
-        <label for="niveau">Niveau d'étude:</label>
-        <input type="text" name="niveau" ng-model="niveau" placeholder="Etudes" /><br/>
-
-        <label for="email">E-mail:</label>
-        <input type="text" name="email" ng-model="email" placeholder="ex@mail.com" />
-      </div>
+      <table>
+        <tr>
+          <td class="cel1">* Civilité : </td>
+          <td class="cel2">
+            <select name="civilite">
+            <option value="0">Monsieur</option>
+            <option value="1">Madame</option>
+            <option value="2">Autre</option>
+            </select>
+          </td>
+          <td class="cel3">* Prénom :</td>
+          <td class="cel4">
+            <input type="text" name="prenom" ng-model="prenom" placeholder="Jean" required/>
+            <span class="error" ng-show="addProfileNewForm.prenom.$error.required">Requis!</span>
+          </td>
+          <td class="cel5">* Nom :</td>
+          <td class="cel6">
+            <input type="text" name="nom" ng-model="nom" placeholder="Dupont" required/>
+            <span class="error" ng-show="addProfileNewForm.nom.$error.required">Requis!</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="cel1">Date de naissance:</td>
+          <td class="cel2">
+            <input type="date" name="birth" ng-model="birth" placeholder="10/12/95" /><br/>
+          </td>
+          <td class="cel3">* Collège :</td>
+          <td class="cel4">
+            <input type="text" name="college" ng-model="college" placeholder="College" required/>
+            <span class="error" ng-show="addProfileNewForm.college.$error.required">Requis!</span>
+          </td>
+          <td class="cel5">* NNI :</td>
+          <td class="cel6">
+            <input type="text" name="nni" ng-model="nni" placeholder="AD00" required/>
+            <span class="error" ng-show="addProfileNewForm.nni.$error.required">Requis!</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="cel1">* Région :</td>
+          <td class="cel2">
+            <select name="region">
+              <option value="1">Région 1</option>
+              <option value="2">Région 2</option>
+              <option value="3">Région 3</option>
+            </select>
+          </td>
+          <td class="cel3">* Métier :</td>
+          <td class="cel4">
+            <select name="metier">
+              <option value="1">Metier 1</option>
+              <option value="2">Metier 2</option>
+              <option value="3">Metier 3</option>
+            </select>
+          </td>
+          <td class="cel5">*Statut :</td>
+          <td class="cel6">
+            <input type="text" name="statut" ng-model="statut" placeholder="Statut" required/>
+            <span class="error" ng-show="addProfileNewForm.statut.$error.required">Requis!</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="cel1">Ancienneté poste :</td>
+          <td class="cel2">
+            <input type="text" name="ancien" ng-model="ancien" placeholder="Ancienneté" />
+          </td>
+          <td class="cel3">Ancienneté IEG:</td>
+          <td class="cel4">
+            <input type="text" name="ancienieg" ng-model="ancienieg" placeholder="Ancienneté IEG" />
+          </td>
+          <td class="cel5">Niveau d'étude :</td>
+          <td class="cel6">
+            <input type="text" name="niveau" ng-model="niveau" placeholder="Etudes" />
+          </td>
+        </tr>
+        <tr>
+          <td class="cel1">E-mail :</td>
+          <td class="cel2">
+            <input type="text" name="email" ng-model="email" placeholder="ex@mail.com" />
+          </td>
+          <td class="cel3"></td>
+          <td class="cel4"></td>
+          <td class="cel5"></td>
+          <td class="cel6"></td>
+        </tr>
+      </table>
 
       <p id="new_star">* indique un champ obligatoire</p>
       <button ng-click="reset()">Tout effacer</button>
