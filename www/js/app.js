@@ -26,6 +26,11 @@ angular.module('projetEnedisApp', ['ionic', 'enedisApp.controllers', 'enedisApp.
         controller: 'AppCtrl'
       })
 
+      .state('login', {
+         url: '/login',
+         templateUrl: 'templates/login.html'
+      })
+
       .state('app.accueil', {
         url: '/accueil',
         views: {
@@ -187,6 +192,6 @@ angular.module('projetEnedisApp', ['ionic', 'enedisApp.controllers', 'enedisApp.
       })
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/accueil');
+  $urlRouterProvider.otherwise('/login');
 
 });
